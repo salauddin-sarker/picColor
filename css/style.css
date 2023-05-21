@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.popup{
+    width: 350px;
+}
+.popup :where(.picker, header, .all_colors, .color){
+    display: flex;
+    align-items: center;
+}
+.popup .picker{
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.picker #color_picker{
+    background-color: #5372f0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 20px;
+}
+.picked_colors{
+    margin: 10px 15px;
+}
+.picked_colors.hide{
+    display: none;
+}
+.picked_colors header{
+    justify-content: space-between;
+}
+.picked_colors header .title{
+    font-size: 16px;
+}
+.picked_colors .clear_all{
+    color: #5372f0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.all_colors{
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.all_colors .color{
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+}
+.all_colors .color .rect{
+    border-radius: 5px;
+    display: block;
+    height: 22px;
+    margin-right: 8px;
+    width: 22px;
+}
+.all_colors .color .value{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
